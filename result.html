@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>{{ name }}</h1>
+
+<img src="{{ flag }}" width="200">
+
+<p><strong>Hovedstad:</strong> {{ capital }}</p>
+<p><strong>Befolkning:</strong> {{ population }}</p>
+<p><strong>Verdensdel:</strong> {{ region }}</p>
+
+<h3>{{ size }}</h3>
+
+<a href="/">⬅ Tilbake</a>
+<a href="/weather/{{ lat }}/{{ lon }}">
+    <button>Se vær 🌤</button>
+</a>
+
+</body>
+</html>

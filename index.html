@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Landoppslag</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>🌍 Finn informasjon om et land</h1>
+
+<form action="/result" method="post">
+    <input type="text" name="country" placeholder="Skriv inn et land">
+    <button type="submit">Søk</button>
+</form>
+
+</body>
+</html>

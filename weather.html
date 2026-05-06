@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vær</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>🌤 Været nå</h1>
+
+<p><strong>Temperatur:</strong> {{ temp }}°C</p>
+<p><strong>Vind:</strong> {{ wind }} km/t</p>
+
+<h3>{{ message }}</h3>
+
+<a href="/">⬅ Tilbake</a>
+
+</body>
+</html>
